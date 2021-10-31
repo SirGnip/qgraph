@@ -1,5 +1,12 @@
-# python_template Repo
-A template for new Python projects
+# qgraph 
+A tool for creating quick graphs to visualize data quickly from the command line
+
+Can operate as a command line tool and a Python library.
+
+Able to produce useful graphs from relatively unstructured data with a minimum of config or setup.
+
+This isn't a "I want to produce a beautiful graph to illustrate a point", but "I have a list of numbers that I want to get a visualization for, now!"
+
 
 # How to run tools against the code
 

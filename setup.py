@@ -4,12 +4,12 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="gnptemplateproject",
+    name="qgraph",
     version="0.0.1",
-    description="A template for new Python projects",
+    description="A tool for creating quick graphs to visualize data quickly from the command line",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/SirGnip/python_template",
+    url="https://github.com/SirGnip/qgraph",
 
     # Code is in "src/", an un-importable directory (at least not easily or accidentally)
     # Helps reduce confusion around whether code from repo or site-packages is being used.
@@ -26,6 +26,7 @@ setuptools.setup(
     python_requires='>=3.7',
     install_requires=[
         # 3rd party dependencies
+        "matplotlib>=3.4,<3.5"
         "pytest==5.3.1",
         "pytest-cov==2.8.1",
         "pylint==2.4.4",
