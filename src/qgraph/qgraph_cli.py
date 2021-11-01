@@ -18,10 +18,9 @@ def run_cli():
 
     # process input
     nums = qgraph_lib.txt_to_nums(sys.stdin.readlines())
-    # nums = (1, 2, 4, 3, 8)
 
     # draw graph
-    qgraph_lib.graph(nums, title=args.title, style=args.subparser_name)
+    qgraph_lib.graph([nums], title=args.title, style=args.subparser_name)
 
 
 if __name__ == '__main__':
