@@ -1,6 +1,6 @@
 import sys
 import argparse
-from qgraph import qgraph
+from qgraph import qgraph_lib
 
 
 def run_cli():
@@ -8,8 +8,8 @@ def run_cli():
     parser.add_argument('--title', help='Graph title')
     args = parser.parse_args()
 
-    nums = qgraph.txt_to_nums(sys.stdin.readlines())
-    qgraph.graph(nums, title=args.title)
+    nums = qgraph_lib.txt_to_nums(sys.stdin.readlines())
+    qgraph_lib.graph(nums, title=args.title)
 
 
 if __name__ == '__main__':
