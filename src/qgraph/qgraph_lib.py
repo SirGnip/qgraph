@@ -6,7 +6,7 @@ def txt_to_nums(lines):
     return [float(line) for line in lines]
 
 
-def graph(nums1, title=None, type='bar'):
+def graph(nums1, title=None, type='line'):
     # tkinter specific code
     mgr = plt.get_current_fig_manager()
     mgr.window.geometry("+50+50")
@@ -15,7 +15,7 @@ def graph(nums1, title=None, type='bar'):
     if title is not None:
         label = title + ' - ' + label
 
-    if type == 'bar':
+    if type == 'line':
         plt.plot(nums1)
     elif type == 'histogram':
         plt.hist(nums1, bins=10)
